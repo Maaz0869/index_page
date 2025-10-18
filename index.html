@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./style.css">
+  <title>ICS/IT — University of Agriculture Peshawar</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title" class="title">Welcome to ICS/IT, The University of Agriculture Peshawar</h1>
+
+      <p class="lead">
+        This site helps 1st semester students quickly find class information like Roll No, Section, Group and Discipline.
+      </p>
+
+      <p class="instruction" aria-live="polite">
+        Enter Your Name to get information (Roll No, Section, Group, Discipline)
+      </p>
+
+      <div class="meta" aria-hidden="false">
+        <span class="badge">Department: ICS/IT</span>
+        <span class="badge">Semester: 1st</span>
+        <span class="badge">Campus: Peshawar</span>
+      </div>
+
+      <p class="note">Tip: Type your full name or the roll number prefix for better matches. This page is a static index prototype — connect it to your backend or CSV lookup to return real records.</p>
+    </section>
+
+    <aside class="search-card" aria-labelledby="search-title">
+      <h3 id="search-title">Student Lookup</h3>
+      <p class="search-desc">Search by name to reveal roll number, section, group and discipline.</p>
+
+      <form action="#" method="get" >
+        <div class="form-row">
+          <label for="q" class="sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Search student</label>
+          <input id="q" name="q" class="search-input" type="search" placeholder="Type your name" autocomplete="off" />
+          <button class="btn" type="submit">Search</button>
+        </div>
+      </form>
+
+      <div style="font-size:0.9rem;color:#516276;margin-top:6px;">
+        This is a single-page static layout — replace the form action with your lookup endpoint to integrate.
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
